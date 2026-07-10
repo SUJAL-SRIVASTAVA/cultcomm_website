@@ -31,7 +31,7 @@ export default function Footer() {
       
       <div className="footer-bottom container">
         <p>Produced with love by the Cultural Committee.</p>
-        <p>&copy; 2025 All rights reserved. | Created by <a href="https://www.linkedin.com/in/sujal-srivastava-27b790303" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold-primary)', textDecoration: 'none', fontWeight: 'bold' }}>Sujal Srivastava</a></p>
+        <p>&copy; 2025 All rights reserved. | Created by <a href="https://www.linkedin.com/in/sujal-srivastava-27b790303" target="_blank" rel="noopener noreferrer" className="creator-link">Sujal Srivastava</a></p>
       </div>
     </footer>
   );

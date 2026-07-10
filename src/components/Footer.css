@@ -58,6 +58,24 @@
   color: #555;
 }
 
+.creator-link {
+  color: var(--gold-primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.creator-link:hover {
+  color: var(--gold-accent);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.5);
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
