@@ -1,0 +1,83 @@
+.prizes-section {
+  background-color: #050505; /* Deeper black */
+}
+
+.prizes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  max-width: 800px;
+}
+
+.prize-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.prize-item:hover {
+  border-bottom-color: var(--gold-accent);
+}
+
+.prize-category {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.prize-item:hover .prize-category {
+  color: var(--gold-accent);
+}
+
+.prize-reward {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prize-amount {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.prize-item:hover .prize-amount {
+  color: var(--gold-accent);
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.prize-extra {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--grey-text);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.participation-note {
+  margin-top: 4rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--grey-text);
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .prize-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .prize-reward {
+    align-items: flex-start;
+  }
+}

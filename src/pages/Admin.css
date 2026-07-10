@@ -1,0 +1,129 @@
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.admin-form {
+  background-color: #111;
+  padding: 3rem;
+  border: 1px solid var(--border-gold);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-title {
+  text-align: center;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+  color: var(--gold-accent);
+}
+
+.admin-input {
+  background: #080808;
+  border: 1px solid var(--border-gold);
+  padding: 1rem;
+  color: #fff;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-input:focus {
+  border-color: var(--gold-accent);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.admin-btn {
+  background: linear-gradient(90deg, var(--gold-muted), var(--gold-accent));
+  color: #000;
+  font-weight: 700;
+  padding: 1rem;
+  cursor: none;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  transition: opacity 0.3s;
+  border-radius: 4px;
+}
+
+.admin-btn:hover {
+  opacity: 0.9;
+}
+
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.admin-header h2 {
+  font-family: var(--font-mono);
+  color: var(--gold-accent);
+}
+
+.admin-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin-select {
+  background: #111;
+  color: #fff;
+  border: 1px solid var(--border-gold);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-body);
+}
+
+.admin-select option {
+  background-color: #111;
+  color: #fff;
+}
+
+.refresh-btn {
+  padding: 0.5rem 1rem;
+}
+
+.admin-table-container {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+.admin-table th, .admin-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #222;
+}
+
+.admin-table th {
+  color: var(--grey-text);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.admin-link {
+  color: var(--gold-accent);
+  text-decoration: underline;
+}

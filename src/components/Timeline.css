@@ -1,0 +1,71 @@
+.timeline-section {
+  background-color: #080808;
+  position: relative;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 600px;
+  margin: 4rem 0 0 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-line-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+}
+
+.timeline-line-active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0; /* Animated via GSAP */
+  background: linear-gradient(to bottom, var(--gold-accent), var(--crimson-accent));
+  box-shadow: 0 0 10px var(--gold-accent);
+}
+
+.milestone-item {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0; /* For GSAP */
+}
+
+.milestone-item:last-child {
+  margin-bottom: 0;
+}
+
+.milestone-dot {
+  position: absolute;
+  left: -2.35rem; /* center on the line */
+  top: 0.2rem;
+  width: 12px;
+  height: 12px;
+  background-color: var(--crimson-accent);
+  border-radius: 50%;
+  border: 2px solid #080808;
+  box-shadow: 0 0 8px var(--crimson-accent);
+}
+
+.milestone-content {
+  padding-top: 0;
+}
+
+.milestone-time {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--grey-text);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.milestone-title {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+}
